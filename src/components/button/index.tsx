@@ -14,6 +14,8 @@ export enum ButtonTextType {
   orange,
   purple,
   green,
+  grey,
+  gray,
 }
 
 interface Props {

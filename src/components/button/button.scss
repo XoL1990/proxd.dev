@@ -26,6 +26,8 @@
 
   &--has-children {
     padding: 0;
+    line-height: 0;
+    border-radius: 0;
   }
 
   &--white {
@@ -74,10 +76,6 @@
 
   &--text-purple {
     color: color(purple1);
-
-    &:hover {
-      background-color: color(purple8);
-    }
   }
 
   &--text-green {
@@ -86,5 +84,13 @@
     &:hover {
       background-color: color(green8);
     }
+  }
+
+  &--text-grey {
+    color: #c7bebb;
+  }
+
+  &--text-gray {
+    color: #f0e7e4;
   }
 }

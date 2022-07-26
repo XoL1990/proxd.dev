@@ -1,12 +1,16 @@
 enum ProjectColor {
+  gray,
   grey,
-  grayPurple,
+  greyPurple,
+  greyBlack,
+  silver,
   light,
   lightPurple,
   white,
   whiteGreen,
   orange,
   purple,
+  purpleWhite,
   green,
 }
 

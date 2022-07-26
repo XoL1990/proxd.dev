@@ -33,7 +33,7 @@ $themes: (
   ),
 );
 
-@mixin themify() {
+@mixin themify($transition: true) {
   @each $theme, $map in $themes {
     .theme-#{$theme} & {
       $theme-map: () !global;
@@ -49,7 +49,10 @@ $themes: (
       }
 
       @content;
-      transition: all 160ms linear;
+
+      @if $transition == true {
+        transition: all 160ms linear;
+      }
 
       $theme-map: null !global;
     }

@@ -87,7 +87,7 @@ export const projects = [
     description: "An Asset Tag 2 page for Kontakt.io",
     role: "Fullstack Developer",
     image: "/images/AssetTag2.png",
-    imagePosition: TileImagePosition.small,
+    imagePosition: TileImagePosition.inside,
     tags: [
       Technology.PHP,
       Technology.WordPress,
@@ -106,7 +106,7 @@ export const projects = [
     description: "A Nano Tag page for Kontakt.io",
     role: "Fullstack Developer",
     image: "/images/NanoTag.png",
-    imagePosition: TileImagePosition.small,
+    imagePosition: TileImagePosition.inside,
     tags: [
       Technology.PHP,
       Technology.WordPress,
@@ -115,7 +115,7 @@ export const projects = [
       Technology.SCSS,
       Technology.CSS,
     ],
-    color: ProjectColor.whiteGreen,
+    color: ProjectColor.purpleWhite,
     url: "https://kontakt.io/nano-tag",
   },
   {
@@ -125,7 +125,7 @@ export const projects = [
     description: "A Anchor Beacon 2 page for Kontakt.io",
     role: "Fullstack Developer",
     image: "/images/AnchorBeacon2.png",
-    imagePosition: TileImagePosition.small,
+    imagePosition: TileImagePosition.inside,
     tags: [
       Technology.PHP,
       Technology.WordPress,
@@ -134,7 +134,7 @@ export const projects = [
       Technology.SCSS,
       Technology.CSS,
     ],
-    color: ProjectColor.whiteGreen,
+    color: ProjectColor.grey,
     url: "https://kontakt.io/anchor-beacon-2",
   },
   {
@@ -142,6 +142,8 @@ export const projects = [
     date: "11.2021 - 12.2021",
     description: "A NFT project",
     role: "Fullstack Developer",
+    image: "/images/NFT.png",
+    imagePosition: TileImagePosition.overflow,
     tags: [
       Technology.TypeScript,
       Technology.Angular,
@@ -157,7 +159,7 @@ export const projects = [
       Technology.SCSS,
       Technology.CSS,
     ],
-    color: ProjectColor.lightPurple,
+    color: ProjectColor.orange,
   },
   {
     title: "Landing",
@@ -166,7 +168,7 @@ export const projects = [
     description: "A Smart Badge page for Kontakt.io",
     role: "Fullstack Developer",
     image: "/images/SmartBadge.png",
-    imagePosition: TileImagePosition.small,
+    imagePosition: TileImagePosition.overflow,
     tags: [
       Technology.PHP,
       Technology.WordPress,
@@ -175,7 +177,7 @@ export const projects = [
       Technology.SCSS,
       Technology.CSS,
     ],
-    color: ProjectColor.grayPurple,
+    color: ProjectColor.green,
     url: "https://kontakt.io/smart-badge",
   },
   {
@@ -185,7 +187,7 @@ export const projects = [
     description: "A Portal Beam page for Kontakt.io",
     role: "Fullstack Developer",
     image: "/images/PortalBeam.png",
-    imagePosition: TileImagePosition.small,
+    imagePosition: TileImagePosition.overflow,
     tags: [
       Technology.PHP,
       Technology.WordPress,
@@ -194,7 +196,7 @@ export const projects = [
       Technology.SCSS,
       Technology.CSS,
     ],
-    color: ProjectColor.grayPurple,
+    color: ProjectColor.greyPurple,
     url: "https://kontakt.io/portal-beam",
   },
   {
@@ -269,7 +271,7 @@ export const projects = [
       Technology.MySQL,
       Technology.Git,
     ],
-    color: ProjectColor.white,
+    color: ProjectColor.light,
     url: "https://geohist.ibrbs.pl",
   },
   {
@@ -278,6 +280,8 @@ export const projects = [
     date: "09.2019 - 02.2022",
     description: "A platform for displaying a bathroom visualization based on filters",
     role: "Fullstack Developer",
+    image: "/images/Tubądzin.png",
+    imagePosition: TileImagePosition.inside,
     tags: [
       Technology.TypeScript,
       Technology.JavaScript,
@@ -292,7 +296,7 @@ export const projects = [
       Technology.Docker,
       Technology.Git,
     ],
-    color: ProjectColor.white,
+    color: ProjectColor.greyPurple,
     url: "https://wirtualnalazienka.tubadzin.pl",
   },
   {
@@ -316,7 +320,7 @@ export const projects = [
       Technology.Docker,
       Technology.Git,
     ],
-    color: ProjectColor.white,
+    color: ProjectColor.gray,
     url: "https://elicence.loughs-agency.org",
   },
   {
@@ -325,8 +329,10 @@ export const projects = [
     date: "04.2020 - 05.2020",
     description: "A mobile game showing the company's process",
     role: "Fullstack Developer",
+    image: "/images/GorrionGame.png",
+    imagePosition: TileImagePosition.overflow,
     tags: [Technology.Unity, Technology.Firebase, Technology.CSharp, Technology.Git],
-    color: ProjectColor.white,
+    color: ProjectColor.silver,
     androidUrl: "https://play.google.com/store/apps/details?id=io.gorrion.roadtosuccess",
     iosUrl: "https://apps.apple.com/za/app/road-to-success/id1514592622",
   },
@@ -370,7 +376,7 @@ export const projects = [
       Technology.CSS,
       Technology.Git,
     ],
-    color: ProjectColor.white,
+    color: ProjectColor.purpleWhite,
   },
   {
     title: "Eduś",
@@ -378,6 +384,8 @@ export const projects = [
     date: "11.2015 - 05.2016",
     description: "Educational platform",
     role: "Fullstack Developer",
+    image: "/images/Eduś.png",
+    imagePosition: TileImagePosition.overflow,
     tags: [
       Technology.PHP,
       Technology.JavaScript,
@@ -387,7 +395,7 @@ export const projects = [
       Technology.CSS,
       Technology.Git,
     ],
-    color: ProjectColor.white,
+    color: ProjectColor.green,
     url: "https://edus.ibrbs.pl",
   },
   {
@@ -396,6 +404,8 @@ export const projects = [
     date: "08.2015 - 11.2015",
     description: "A platform for displaying drinks based on filters",
     role: "Fullstack Developer",
+    image: "/images/Absolut.png",
+    imagePosition: TileImagePosition.overflow,
     tags: [
       Technology.PHP,
       Technology.JavaScript,
@@ -406,7 +416,7 @@ export const projects = [
       Technology.CSS,
       Technology.Git,
     ],
-    color: ProjectColor.white,
+    color: ProjectColor.gray,
   },
   {
     title: "Tauron",
@@ -414,6 +424,8 @@ export const projects = [
     date: "03.2015 - 07.2015",
     description: "A page for the annual report",
     role: "Fullstack Developer",
+    image: "/images/Tauron.png",
+    imagePosition: TileImagePosition.inside,
     tags: [
       Technology.PHP,
       Technology.WordPress,
@@ -424,7 +436,7 @@ export const projects = [
       Technology.CSS,
       Technology.Git,
     ],
-    color: ProjectColor.white,
+    color: ProjectColor.greyBlack,
   },
   {
     title: "Asus",
@@ -432,6 +444,8 @@ export const projects = [
     date: "10.2014 - 12.2014",
     description: "A contest page for T100 laptop campaigns",
     role: "Fullstack Developer",
+    image: "/images/Asus.png",
+    imagePosition: TileImagePosition.inside,
     tags: [
       Technology.PHP,
       Technology.JavaScript,
@@ -440,7 +454,7 @@ export const projects = [
       Technology.CSS,
       Technology.Git,
     ],
-    color: ProjectColor.white,
+    color: ProjectColor.grey,
   },
   {
     title: "Przejrzyj chłoniaka",
@@ -464,6 +478,8 @@ export const projects = [
     date: "05.2014 - 06.2014",
     description: "An application for McDonald's Iced Fruit Smoothies campaign",
     role: "Fullstack Developer",
+    image: "/images/Iced Fruit.png",
+    imagePosition: TileImagePosition.overflow,
     tags: [
       Technology.PHP,
       Technology.AngularJS,
@@ -473,7 +489,7 @@ export const projects = [
       Technology.CSS,
       Technology.Git,
     ],
-    color: ProjectColor.white,
+    color: ProjectColor.purpleWhite,
   },
   {
     title: "AmCham",
@@ -491,7 +507,7 @@ export const projects = [
       Technology.CSS,
       Technology.Git,
     ],
-    color: ProjectColor.white,
+    color: ProjectColor.light,
   },
   {
     title: "Wedel",
@@ -499,6 +515,8 @@ export const projects = [
     date: "12.2013 - 01.2014",
     description: 'A small contest application for "Czekoladowy weekend" event',
     role: "Fullstack Developer",
+    image: "/images/Wedel.png",
+    imagePosition: TileImagePosition.inside,
     tags: [
       Technology.PHP,
       Technology.JavaScript,
@@ -508,7 +526,7 @@ export const projects = [
       Technology.CSS,
       Technology.Git,
     ],
-    color: ProjectColor.white,
+    color: ProjectColor.greyPurple,
   },
   {
     title: "McDonald's",
@@ -516,6 +534,8 @@ export const projects = [
     date: "10.2013 - 12.2013",
     description: "An internal platform for employee management",
     role: "Fullstack Developer",
+    image: "/images/McDonald's - employee.png",
+    imagePosition: TileImagePosition.overflow,
     tags: [
       Technology.PHP,
       Technology.JavaScript,
@@ -526,7 +546,7 @@ export const projects = [
       Technology.CSS,
       Technology.Git,
     ],
-    color: ProjectColor.white,
+    color: ProjectColor.whiteGreen,
   },
   {
     title: "Geoportal",
@@ -543,6 +563,6 @@ export const projects = [
       Technology.CSS,
       Technology.SVN,
     ],
-    color: ProjectColor.white,
+    color: ProjectColor.greyBlack,
   },
 ];

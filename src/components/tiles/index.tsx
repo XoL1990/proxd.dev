@@ -39,7 +39,7 @@ const Tiles = React.memo(() => {
         </Tile>
       )}
       {filters.length === 0 && (
-        <Tile className="tiles__project" type={TileType.purple}>
+        <Tile className="tiles__project" type={TileType.purplegrey}>
           <h2 className="tiles__space">Experience</h2>
           <div className="tiles__date">01.2022 - 08.2022</div>
           <div className="tiles__title">Krajowa Izba Fizjoterapii</div>
@@ -68,19 +68,34 @@ const Tiles = React.memo(() => {
           case ProjectColor.orange:
             type = TileType.orange;
             buttonTextType = ButtonTextType.orange;
-            roleClass = " tiles__black";
+            roleClass = " tiles__white";
             break;
           case ProjectColor.purple:
             type = TileType.purple;
             buttonTextType = ButtonTextType.purple;
             break;
+          case ProjectColor.purpleWhite:
+            type = TileType.purple;
+            buttonType = ButtonType.black;
+            buttonTextType = ButtonTextType.purple;
+            roleClass = " tiles__white";
+            break;
           case ProjectColor.green:
             type = TileType.green;
             buttonTextType = ButtonTextType.green;
+            roleClass = " tiles__white";
             break;
           case ProjectColor.grey:
             type = TileType.grey;
+            buttonType = ButtonType.black;
+            buttonTextType = ButtonTextType.grey;
             roleClass = " tiles__white";
+            break;
+          case ProjectColor.gray:
+            type = TileType.gray;
+            buttonType = ButtonType.black;
+            buttonTextType = ButtonTextType.gray;
+            roleClass = " tiles__purple";
             break;
           case ProjectColor.white:
             buttonType = ButtonType.black;
@@ -89,10 +104,21 @@ const Tiles = React.memo(() => {
             buttonType = ButtonType.green;
             roleClass = " tiles__green";
             break;
-          case ProjectColor.grayPurple:
-            type = TileType.gray;
+          case ProjectColor.greyPurple:
+            type = TileType.silver;
             buttonType = ButtonType.purple;
             roleClass = " tiles__purple";
+            break;
+          case ProjectColor.greyBlack:
+            type = TileType.silver;
+            buttonType = ButtonType.purple;
+            roleClass = " tiles__white";
+            break;
+          case ProjectColor.silver:
+            type = TileType.silver;
+            buttonType = ButtonType.black;
+            buttonTextType = ButtonTextType.grey;
+            roleClass = " tiles__white";
             break;
           case ProjectColor.light:
             type = TileType.light;

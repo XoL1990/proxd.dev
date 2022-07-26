@@ -35,6 +35,10 @@
 
   &--purple {
     background-color: color(purple1);
+  }
+
+  &--purplegrey {
+    background-color: color(purple1);
 
     *:not(h2) {
       color: #c7bebb;
@@ -43,7 +47,6 @@
 
   &--orange {
     background-color: color(orange1);
-    color: #f9f9f9;
   }
 
   &--grey {
@@ -51,6 +54,10 @@
   }
 
   &--gray {
+    background-color: #f0e7e4;
+  }
+
+  &--silver {
     background-color: #e4e4e4;
   }
 

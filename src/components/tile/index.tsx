@@ -6,9 +6,11 @@ export enum TileType {
   white,
   green,
   purple,
+  purplegrey,
   orange,
-  gray,
+  silver,
   grey,
+  gray,
   light,
 }
 

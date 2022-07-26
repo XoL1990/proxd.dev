@@ -10,7 +10,7 @@
 
   @include get-vh;
 
-  @include themify {
+  @include themify(false) {
     background-color: themed("backgroundColor");
   }
 
