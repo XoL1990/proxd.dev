@@ -270,6 +270,7 @@ export const projects = [
       Technology.Git,
     ],
     color: ProjectColor.white,
+    url: "https://geohist.ibrbs.pl",
   },
   {
     title: "Tubądzin",
@@ -372,7 +373,7 @@ export const projects = [
     color: ProjectColor.white,
   },
   {
-    title: "Biblioteka Śląska",
+    title: "Eduś",
     supTitle: "Gorrion",
     date: "11.2015 - 05.2016",
     description: "Educational platform",
@@ -387,6 +388,7 @@ export const projects = [
       Technology.Git,
     ],
     color: ProjectColor.white,
+    url: "https://edus.ibrbs.pl",
   },
   {
     title: "Absolut",
@@ -443,7 +445,7 @@ export const projects = [
   {
     title: "Przejrzyj chłoniaka",
     supTitle: "Gorrion",
-    date: "07.2014 - 10.2014",
+    date: "06.2014 - 10.2014",
     description: 'A website for the "mam haka na raka" campaign',
     role: "Fullstack Developer",
     tags: [
@@ -457,9 +459,26 @@ export const projects = [
     color: ProjectColor.white,
   },
   {
+    title: "Iced Fruit",
+    supTitle: "Gorrion",
+    date: "05.2014 - 06.2014",
+    description: "An application for McDonald's Iced Fruit Smoothies campaign",
+    role: "Fullstack Developer",
+    tags: [
+      Technology.PHP,
+      Technology.AngularJS,
+      Technology.JavaScript,
+      Technology.jQuery,
+      Technology.HTML5,
+      Technology.CSS,
+      Technology.Git,
+    ],
+    color: ProjectColor.white,
+  },
+  {
     title: "AmCham",
     supTitle: "Gorrion",
-    date: "04.2014 - 07.2014",
+    date: "04.2014 - 05.2014",
     description: "A CRM for AmCham",
     role: "Fullstack Developer",
     tags: [
