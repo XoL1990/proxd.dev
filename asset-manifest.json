@@ -1,9 +1,11 @@
 {
   "files": {
-    "main.css": "/static/css/main.a6adff1f.css",
-    "main.js": "/static/js/main.679f31fa.js",
+    "main.css": "/static/css/main.eac05b6c.css",
+    "main.js": "/static/js/main.4ea3e015.js",
     "static/js/787.2e4e3a46.chunk.js": "/static/js/787.2e4e3a46.chunk.js",
+    "static/media/pt_serif_italic-webfont.woff": "/static/media/pt_serif_italic-webfont.0f7d62bcd20708f346e5.woff",
     "static/media/pt_serif-webfont.woff": "/static/media/pt_serif-webfont.c119a19d15fe74b1ce8a.woff",
+    "static/media/pt_serif_italic-webfont.woff2": "/static/media/pt_serif_italic-webfont.a15eb95bdbf65b373239.woff2",
     "static/media/pt_serif-webfont.woff2": "/static/media/pt_serif-webfont.dbfee21deccd6dedd0f2.woff2",
     "static/media/caustenround-regular-webfont.woff": "/static/media/caustenround-regular-webfont.e57368659f6abd08923b.woff",
     "static/media/caustenround-bold-webfont.woff": "/static/media/caustenround-bold-webfont.dd0e2835c8c9e3db40f8.woff",
@@ -13,12 +15,12 @@
     "static/media/light-item.svg": "/static/media/light-item.c70dfaff16dc8fcbb4646a7d3c142d25.svg",
     "index.html": "/index.html",
     "static/media/dark-item.svg": "/static/media/dark-item.116ddb771afc2c7ee014d7c1f679b465.svg",
-    "main.a6adff1f.css.map": "/static/css/main.a6adff1f.css.map",
-    "main.679f31fa.js.map": "/static/js/main.679f31fa.js.map",
+    "main.eac05b6c.css.map": "/static/css/main.eac05b6c.css.map",
+    "main.4ea3e015.js.map": "/static/js/main.4ea3e015.js.map",
     "787.2e4e3a46.chunk.js.map": "/static/js/787.2e4e3a46.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a6adff1f.css",
-    "static/js/main.679f31fa.js"
+    "static/css/main.eac05b6c.css",
+    "static/js/main.4ea3e015.js"
   ]
 }
