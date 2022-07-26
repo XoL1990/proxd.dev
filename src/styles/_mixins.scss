@@ -1,0 +1,26 @@
+@mixin transition-basic($name: "all") {
+  transition: #{$name} 300ms linear;
+}
+
+@mixin transition-fast($name: "all") {
+  transition: #{$name} 60ms linear;
+}
+
+@mixin custom-scroll-bar() {
+  scrollbar-width: thin;
+
+  &::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+    background: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #d8d8e6;
+  }
+}
+
+@mixin get-vh($value: 100) {
+  height: #{$value}vh; /* Fallback for browsers that do not support Custom Properties */
+  height: calc(var(--vh, 1vh) * $value);
+}

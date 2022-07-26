@@ -1,0 +1,83 @@
+@import "~styles/colors";
+@import "~styles/breakpoint";
+@import "~styles/mixins";
+@import "~styles/reset";
+@import "~styles/themes";
+@import "~styles/typography";
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: $font-causten-round;
+  font-weight: normal;
+  font-size: 1.5rem;
+  line-height: 2.4rem;
+  overflow: hidden;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 12.6rem;
+  line-height: 15.1rem;
+  margin: 0;
+
+  @include breakpoint($desktop) {
+    font-size: 8rem;
+  }
+
+  @include breakpoint($mobile) {
+    font-size: 3.6rem;
+    line-height: 10rem;
+  }
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 4rem;
+  line-height: 5rem;
+
+  @include breakpoint($desktop) {
+    font-size: 3rem;
+    line-height: 4rem;
+  }
+
+  @include breakpoint($mobile) {
+    font-size: 2.2rem;
+    line-height: 2.4rem;
+  }
+}
+
+h4 {
+  font-family: $font-pt;
+  font-weight: bold;
+  font-size: 2.8rem;
+  line-height: 3.7rem;
+
+  @include breakpoint($desktop) {
+    font-size: 2.4rem;
+    line-height: 3rem;
+  }
+
+  @include breakpoint($mobile) {
+    font-size: 2rem;
+    line-height: 2.6rem;
+  }
+}
+
+p {
+  font-family: $font-pt;
+  font-size: 2.2rem;
+  line-height: 2.9rem;
+  margin: 0;
+
+  @include breakpoint($desktop) {
+    font-size: 2rem;
+  }
+
+  @include breakpoint($mobile) {
+    font-size: 1.6rem;
+    line-height: 2rem;
+  }
+}

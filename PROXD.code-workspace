@@ -1,0 +1,27 @@
+{
+  "folders": [
+    {
+      "path": "."
+    }
+  ],
+  "settings": {
+    "editor.formatOnSave": false,
+    "typescript.tsdk": "root/node_modules/typescript/lib",
+    "files.exclude": {
+      "node_modules": true,
+      "build": true,
+    },
+    "cSpell.words": [
+      "browserslist"
+    ]
+  },
+  "extensions": {
+    "recommendations": [
+      "mikestead.dotenv",
+      "wayou.vscode-todo-highlight",
+      "streetsidesoftware.code-spell-checker",
+      "esbenp.prettier-vscode",
+      "mrmlnc.vscode-scss"
+    ]
+  }
+}

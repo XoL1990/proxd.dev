@@ -1,0 +1,43 @@
+// max content width
+$max-width: 128.8rem;
+
+// breakpoints
+$desktop-hdp: "xxl";
+$desktop-hd: 1920px;
+$desktop: 1366px;
+$tablet: 768px;
+$mobile: 699px;
+
+@mixin breakpoint($breakpoint, $from: "max") {
+  $value: if($from == "max", $breakpoint, $breakpoint + 1);
+
+  @if $breakpoint == $desktop-hdp {
+    @media only screen and (min-width: $desktop-hd) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == $desktop-hd {
+    @media only screen and (#{ $from }-width: $value) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == $desktop {
+    @media only screen and (#{ $from }-width: $value) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == $tablet {
+    @media only screen and (#{ $from }-width: $value) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == $mobile {
+    @media only screen and (#{ $from }-width: $value) {
+      @content;
+    }
+  }
+}

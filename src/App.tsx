@@ -1,26 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Footer from "components/footer";
+import Header from "components/header";
+import Logo from "components/logo";
+import Skills from "components/skills";
+import Tiles from "components/tiles";
+import Theme from "enums/theme";
+import { useRecoilValue } from "recoil";
+import themeAtom from "state/atoms/themeAtom";
+import "./App.scss";
 
-function App() {
+const App = () => {
+  const theme = useRecoilValue(themeAtom);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={`theme-${Theme[theme]}`}>
+      <div className="app">
+        <div className="app__container">
+          <Logo />
+          <Header />
+          <Skills />
+          <Tiles />
+          <Footer />
+        </div>
+      </div>
     </div>
   );
-}
-
+};
 export default App;

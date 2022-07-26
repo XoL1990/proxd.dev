@@ -1,0 +1,149 @@
+@use "~styles/breakpoint" as *;
+@use "~styles/colors" as *;
+@use "~styles/typography" as *;
+
+.tiles {
+  width: 100%;
+  margin-bottom: 5rem;
+
+  @include breakpoint($desktop) {
+    margin-bottom: 5rem;
+  }
+
+  @include breakpoint($mobile) {
+    margin-bottom: 3rem;
+  }
+
+  &__project {
+    width: 100%;
+    box-sizing: border-box;
+    padding-bottom: 3rem;
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 2.8rem;
+    line-height: 3.4rem;
+
+    @include breakpoint($desktop) {
+      font-size: 2.2rem;
+      line-height: 3rem;
+    }
+
+    @include breakpoint($mobile) {
+      font-size: 2rem;
+      line-height: 2rem;
+    }
+  }
+
+  &__description {
+    font-family: $font-pt;
+    font-size: 2rem;
+    line-height: 2.7rem;
+    margin: 0.7rem 0;
+  }
+
+  &__description2 {
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 2.4rem;
+    margin: 1.2rem 0;
+  }
+
+  &__date {
+    font-size: 1.9rem;
+    line-height: 2.3rem;
+    margin: 0.6rem 0;
+
+    @include breakpoint($desktop) {
+      font-size: 1.6rem;
+    }
+
+    @include breakpoint($mobile) {
+      font-size: 1.4rem;
+    }
+  }
+
+  &__text {
+    font-size: 3rem;
+    line-height: 4rem;
+
+    @include breakpoint($desktop) {
+      font-size: 2.4rem;
+      line-height: 3.4rem;
+    }
+
+    @include breakpoint($mobile) {
+      font-size: 2rem;
+      line-height: 3rem;
+    }
+  }
+
+  &__space {
+    margin-bottom: 3.7rem;
+
+    @include breakpoint($desktop) {
+      margin-bottom: 3rem;
+    }
+
+    @include breakpoint($mobile) {
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__sup {
+    vertical-align: super;
+    font-size: 2.4rem;
+    margin-left: 1rem;
+
+    @include breakpoint($desktop) {
+      font-size: 2rem;
+    }
+
+    @include breakpoint($mobile) {
+      font-size: 1.6rem;
+    }
+  }
+
+  &__role {
+    font-family: $font-pt;
+    font-weight: bold;
+    font-size: 2.6rem;
+    line-height: 3.4rem;
+    margin: 1.7rem 0;
+  }
+
+  &__tags {
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+  }
+
+  &__black {
+    color: #282828;
+  }
+
+  &__white {
+    color: #f9f9f9;
+  }
+
+  &__green {
+    color: color(green1);
+  }
+
+  &__purple {
+    color: color(purple1);
+  }
+
+  &__button {
+    margin-top: 2.9rem;
+
+    &--margin-right {
+      margin-right: 2rem;
+    }
+  }
+
+  &__project-description {
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+  }
+}

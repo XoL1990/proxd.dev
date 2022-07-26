@@ -1,0 +1,73 @@
+@use "~styles/breakpoint" as *;
+@use "~styles/colors" as *;
+@use "~styles/mixins" as *;
+@use "~styles/themes" as *;
+
+.skill {
+  $self: &;
+
+  background-color: white;
+  padding: 1.1rem 1.8rem;
+  border-radius: 2.3rem;
+  white-space: nowrap;
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+  cursor: pointer;
+  display: flex;
+
+  @include breakpoint($desktop) {
+    padding: 1rem 1.4rem;
+  }
+
+  @include breakpoint($mobile) {
+    padding: 0.6rem 1rem;
+    font-size: 1.4rem;
+  }
+
+  @include transition-basic;
+
+  &--clear {
+    background-color: transparent;
+    border-width: 1px;
+    border-style: solid;
+    @include themify {
+      border-color: themed("borderColor");
+      color: themed("fontColor");
+    }
+  }
+
+  &--active {
+    background-color: color(green1);
+
+    #{ $self }__x {
+      width: 1.2rem;
+    }
+  }
+
+  &__x {
+    position: relative;
+    width: 0;
+    height: 1.6rem;
+    margin-left: 0.4rem;
+    overflow: hidden;
+    @include transition-fast;
+
+    &:after {
+      content: "";
+      height: 100%;
+      border-left: 1px solid black;
+      position: absolute;
+      transform: rotate(45deg);
+      left: 50%;
+    }
+
+    &:before {
+      content: "";
+      height: 100%;
+      border-left: 1px solid black;
+      position: absolute;
+      transform: rotate(-45deg);
+      left: 50%;
+    }
+  }
+}

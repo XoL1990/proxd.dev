@@ -1,0 +1,67 @@
+@use "~styles/colors";
+@use "sass:map";
+
+$themes: (
+  light: (
+    backgroundColor: #efe7e3,
+    logo: #282828,
+    headerBG: #423d3b,
+    headerColor: #efe7e3,
+    fontColor: #282828,
+    lightColor: #423d3b,
+    lightFontColor: #ffffff,
+    borderColor: #282828,
+    footerBackground: #c7bebb,
+    themeSwitchButton: #ffffff,
+    themeSwitchLightItem: #ffffff,
+    themeSwitchDarkItem: #e4e4e4,
+    themeSwitchPosition: 0.4rem,
+  ),
+  dark: (
+    backgroundColor: #282828,
+    logo: #e4e4e4,
+    headerBG: #e4e4e4,
+    headerColor: #282828,
+    fontColor: #e4e4e4,
+    lightColor: #f0e7e4,
+    lightFontColor: #121111,
+    borderColor: #ffffff,
+    footerBackground: #f0e7e4,
+    themeSwitchLightItem: #e4e4e4,
+    themeSwitchDarkItem: #ffffff,
+    themeSwitchPosition: 50%,
+  ),
+);
+
+@mixin themify() {
+  @each $theme, $map in $themes {
+    .theme-#{$theme} & {
+      $theme-map: () !global;
+
+      @each $key, $submap in $map {
+        $value: map.get(map.get($themes, $theme), "#{$key}");
+        $theme-map: map.merge(
+          $theme-map,
+          (
+            $key: $value,
+          )
+        ) !global;
+      }
+
+      @content;
+      transition: all 160ms linear;
+
+      $theme-map: null !global;
+    }
+  }
+}
+
+@function themed($key) {
+  @return map.get($theme-map, $key);
+}
+
+@mixin themed-font() {
+  @include themify {
+    color: themed("fontColor");
+  }
+}

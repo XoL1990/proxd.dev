@@ -1,0 +1,47 @@
+@use "~styles/breakpoint" as *;
+@use "~styles/mixins" as *;
+@use "~styles/themes" as *;
+
+.skills {
+  margin: 5rem 0;
+  width: 100%;
+  display: flex;
+
+  @include breakpoint($mobile) {
+    margin: 3rem 0;
+    flex-direction: column;
+  }
+
+  &__title {
+    color: #282828;
+    font-weight: bold;
+    font-size: 2.4rem;
+    line-height: 2.9rem;
+    padding-top: 0.6rem;
+    @include themed-font;
+  }
+
+  &__content {
+    margin-left: 2.9rem;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 1.1rem;
+    row-gap: 1.2rem;
+
+    @include breakpoint($mobile) {
+      margin-top: 1rem;
+      margin-left: 0;
+    }
+  }
+
+  &__clear-button {
+    opacity: 0;
+    pointer-events: none;
+    @include transition-fast;
+
+    &--visible {
+      opacity: 1;
+      pointer-events: all;
+    }
+  }
+}

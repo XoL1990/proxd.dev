@@ -1,0 +1,22 @@
+@use "~styles/breakpoint" as *;
+@use "~styles/colors" as *;
+
+.year {
+  color: color(black1);
+  font-weight: bold;
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  padding: 1.25rem 3rem;
+  border-radius: 1.3rem;
+  background-color: color(green1);
+
+  @include breakpoint($desktop) {
+    font-size: 2.2rem;
+    padding: 1rem 2rem;
+  }
+
+  @include breakpoint($mobile) {
+    font-size: 2rem;
+    padding: 0.8rem 1.6rem;
+  }
+}

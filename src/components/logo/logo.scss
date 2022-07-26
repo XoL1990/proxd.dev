@@ -1,0 +1,56 @@
+@use "~styles/breakpoint" as *;
+@use "~styles/themes" as *;
+
+@mixin logo-start-props {
+  width: 120rem;
+  height: 100vh;
+  margin: 50vh 0 0;
+  transform: translateY(-50%);
+}
+
+@keyframes logo-animation {
+  0% {
+    @include logo-start-props;
+  }
+  50% {
+    @include logo-start-props;
+  }
+  100% {
+    width: 12rem;
+    height: 4.2rem;
+    margin: 7vh 0;
+    transform: translateY(0%);
+  }
+}
+
+@keyframes logo-animation-mobile {
+  0% {
+    @include logo-start-props;
+  }
+  50% {
+    @include logo-start-props;
+  }
+  100% {
+    width: 12rem;
+    height: 4.2rem;
+    margin: 4rem 0;
+    transform: translateY(0%);
+  }
+}
+
+.logo {
+  @include themify {
+    fill: themed("logo");
+  }
+  @include logo-start-props;
+  position: relative;
+  max-width: 100%;
+  animation-name: logo-animation;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+
+  @include breakpoint($mobile) {
+    animation-name: logo-animation-mobile;
+  }
+}

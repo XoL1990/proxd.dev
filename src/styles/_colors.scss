@@ -1,0 +1,66 @@
+/* stylelint-disable */
+$colors: (
+  // green
+  green1: #56d270,
+  green2: #68d77f,
+  green3: #7bdc8f,
+  green4: #8ee19f,
+  green5: #a1e6af,
+  green6: #b3ebbf,
+  green7: #c6f0cf,
+  green8: #d9f5df,
+  green9: #ecfaef,
+  // purple
+  purple1: #816795,
+  purple2: #8f77a0,
+  purple3: #9d88ac,
+  purple4: #ab99b8,
+  purple5: #b9aac4,
+  purple6: #c7bbcf,
+  purple7: #d5ccdb,
+  purple8: #e3dde7,
+  purple9: #f1eef3,
+  // orange
+  orange1: #ff7701,
+  orange2: #ff861d,
+  orange3: #ff9539,
+  orange4: #ffa455,
+  orange5: #ffb371,
+  orange6: #ffc28e,
+  orange7: #ffd1aa,
+  orange8: #ffe0c6,
+  orange9: #ffefe2,
+  // black
+  black1: #282828,
+  black2: #3f3f3f,
+  black3: #575757,
+  black4: #6f6f6f,
+  black5: #878787,
+  black6: #9f9f9f,
+  black7: #b7b7b7,
+  black8: #cfcfcf,
+  black9: #e7e7e7,
+  // gray
+  gray1: #e4e4e4,
+  gray2: #e7e7e7,
+  gray3: #eaeaea,
+  gray4: #ededed,
+  gray5: #f0f0f0,
+  gray6: #f3f3f3,
+  gray7: #f6f6f6,
+  gray8: #f9f9f9,
+  gray9: #fcfcfc
+);
+
+@function color($color, $alpha: 1) {
+  @if $alpha != 1 {
+    @return rgb(map-get($colors, $color), $alpha);
+  }
+  @return map-get($colors, $color);
+}
+
+:export {
+  @each $key, $value in $colors {
+    #{$key}: $value;
+  }
+}

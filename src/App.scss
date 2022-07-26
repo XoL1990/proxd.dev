@@ -1,0 +1,35 @@
+@use "~styles/breakpoint" as *;
+@use "~styles/mixins" as *;
+@use "~styles/themes" as *;
+
+.app {
+  display: flex;
+  justify-content: center;
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  @include get-vh;
+
+  @include themify {
+    background-color: themed("backgroundColor");
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 2rem;
+    max-width: 128.8rem;
+    box-sizing: border-box;
+    height: fit-content;
+
+    @include breakpoint($desktop) {
+      max-width: 100rem;
+    }
+
+    @include breakpoint($mobile) {
+      padding: 0 1.6rem;
+    }
+  }
+}

@@ -1,0 +1,90 @@
+@use "~styles/breakpoint" as *;
+@use "~styles/colors" as *;
+@use "~styles/mixins" as *;
+@use "~styles/typography" as *;
+
+.button {
+  border-radius: 1.4rem;
+  font-family: $font-causten-round;
+  font-weight: bold;
+  font-size: 2.2rem;
+  line-height: 2.6rem;
+  padding: 1.2rem 2.9rem;
+  border: none;
+  cursor: pointer;
+  @include transition-basic;
+
+  @include breakpoint($desktop) {
+    font-size: 2rem;
+    line-height: 2.4rem;
+  }
+
+  @include breakpoint($mobile) {
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+  }
+
+  &--has-children {
+    padding: 0;
+  }
+
+  &--white {
+    background-color: color(gray8);
+    color: color(black1);
+
+    &:hover {
+      background-color: color(gray7);
+    }
+  }
+
+  &--black {
+    background-color: color(black1);
+    color: color(gray8);
+
+    &:hover {
+      background-color: color(black2);
+    }
+  }
+
+  &--green {
+    background-color: color(green1);
+    color: #ffffff;
+
+    &:hover {
+      background-color: color(green2);
+    }
+  }
+
+  &--purple {
+    background-color: color(purple1);
+    color: #ffffff;
+
+    &:hover {
+      background-color: color(purple2);
+    }
+  }
+
+  &--text-orange {
+    color: color(orange1);
+
+    &:hover {
+      background-color: color(orange8);
+    }
+  }
+
+  &--text-purple {
+    color: color(purple1);
+
+    &:hover {
+      background-color: color(purple8);
+    }
+  }
+
+  &--text-green {
+    color: color(green1);
+
+    &:hover {
+      background-color: color(green8);
+    }
+  }
+}
