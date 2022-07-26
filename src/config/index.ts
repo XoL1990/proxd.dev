@@ -252,7 +252,7 @@ export const projects = [
     color: ProjectColor.white,
   },
   {
-    title: "Geohist Ibr",
+    title: "Geohist",
     supTitle: "Gorrion",
     date: "05.2020 - 03.2022",
     description: "A web application displaying various information on the map",
@@ -465,23 +465,6 @@ export const projects = [
     tags: [
       Technology.PHP,
       Technology.WordPress,
-      Technology.JavaScript,
-      Technology.jQuery,
-      Technology.HTML5,
-      Technology.MySQL,
-      Technology.CSS,
-      Technology.Git,
-    ],
-    color: ProjectColor.white,
-  },
-  {
-    title: "Kruk",
-    supTitle: "Gorrion",
-    date: "01.2014 - 03.2014",
-    description: "A mini competition game for Facebook platform",
-    role: "Fullstack Developer",
-    tags: [
-      Technology.PHP,
       Technology.JavaScript,
       Technology.jQuery,
       Technology.HTML5,
