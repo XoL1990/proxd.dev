@@ -40,16 +40,29 @@ $colors: (
   black7: #b7b7b7,
   black8: #cfcfcf,
   black9: #e7e7e7,
+  // silver
+  silver1: #e4e4e4,
+  silver2: #e7e7e7,
+  silver3: #eaeaea,
+  silver4: #ededed,
+  silver5: #f0f0f0,
+  silver6: #f3f3f3,
+  silver7: #f6f6f6,
+  silver8: #f9f9f9,
+  silver9: #fcfcfc,
   // gray
-  gray1: #e4e4e4,
-  gray2: #e7e7e7,
-  gray3: #eaeaea,
-  gray4: #ededed,
-  gray5: #f0f0f0,
-  gray6: #f3f3f3,
-  gray7: #f6f6f6,
-  gray8: #f9f9f9,
-  gray9: #fcfcfc
+  gray1: #c7bebb,
+  gray2: #cdc5c2,
+  gray3: #d3ccca,
+  gray4: #d9d3d1,
+  gray5: #dfdad9,
+  gray6: #e6e2e0,
+  gray7: #ece9e8,
+  gray8: #f2f0ef,
+  gray9: #f8f7f7,
+  // others
+  select: #ddbfb5,
+  light: #ffffff
 );
 
 @function color($color, $alpha: 1) {

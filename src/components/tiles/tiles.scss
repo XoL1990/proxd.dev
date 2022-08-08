@@ -111,6 +111,14 @@
     font-size: 2.6rem;
     line-height: 3.4rem;
     margin: 1.7rem 0;
+
+    @include breakpoint($desktop) {
+      font-size: 2.2rem;
+    }
+
+    @include breakpoint($mobile) {
+      font-size: 2rem;
+    }
   }
 
   &__tags {
@@ -119,11 +127,11 @@
   }
 
   &__black {
-    color: #282828;
+    color: color(black1);
   }
 
   &__white {
-    color: #f9f9f9;
+    color: color(silver8);
   }
 
   &__green {
@@ -137,8 +145,17 @@
   &__button {
     margin-top: 2.9rem;
 
-    &--margin-right {
+    &--mobile {
       margin-right: 2rem;
+
+      @include breakpoint($desktop) {
+        margin: 1rem 0 0;
+        width: 70%;
+
+        img {
+          width: 100%;
+        }
+      }
     }
   }
 

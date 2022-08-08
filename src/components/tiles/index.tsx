@@ -98,9 +98,6 @@ const Tiles = React.memo(() => {
             roleClass = " tiles__purple";
             break;
           case ProjectColor.white:
-            buttonType = ButtonType.black;
-            break;
-          case ProjectColor.whiteGreen:
             buttonType = ButtonType.green;
             roleClass = " tiles__green";
             break;
@@ -112,13 +109,7 @@ const Tiles = React.memo(() => {
           case ProjectColor.greyBlack:
             type = TileType.silver;
             buttonType = ButtonType.purple;
-            roleClass = " tiles__white";
-            break;
-          case ProjectColor.silver:
-            type = TileType.silver;
-            buttonType = ButtonType.black;
-            buttonTextType = ButtonTextType.grey;
-            roleClass = " tiles__white";
+            roleClass = " tiles__purple";
             break;
           case ProjectColor.light:
             type = TileType.light;
@@ -167,7 +158,7 @@ const Tiles = React.memo(() => {
                 onClick={
                   project.androidUrl === "null" ? undefined : () => openUrl(project.androidUrl)
                 }
-                className="tiles__button tiles__button--margin-right"
+                className="tiles__button tiles__button--mobile"
               >
                 <img src="/play-store.svg" alt="Play Store Button" />
               </Button>
@@ -175,7 +166,7 @@ const Tiles = React.memo(() => {
             {project.iosUrl && (
               <Button
                 onClick={project.iosUrl === "null" ? undefined : () => openUrl(project.iosUrl)}
-                className="tiles__button tiles__button--margin-right"
+                className="tiles__button tiles__button--mobile"
               >
                 <img src="/app-store.svg" alt="App Store Button" />
               </Button>

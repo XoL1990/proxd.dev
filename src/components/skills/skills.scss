@@ -1,4 +1,5 @@
 @use "~styles/breakpoint" as *;
+@use "~styles/colors" as *;
 @use "~styles/mixins" as *;
 @use "~styles/themes" as *;
 
@@ -13,7 +14,7 @@
   }
 
   &__title {
-    color: #282828;
+    color: color(black1);
     font-weight: bold;
     font-size: 2.4rem;
     line-height: 2.9rem;

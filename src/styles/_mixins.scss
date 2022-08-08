@@ -2,6 +2,10 @@
   transition: #{$name} 300ms linear;
 }
 
+@mixin transition-medium($name: "all") {
+  transition: #{$name} 120ms linear;
+}
+
 @mixin transition-fast($name: "all") {
   transition: #{$name} 60ms linear;
 }

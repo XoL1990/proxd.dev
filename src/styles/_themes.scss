@@ -1,34 +1,32 @@
-@use "~styles/colors";
+@use "~styles/colors" as *;
 @use "sass:map";
 
 $themes: (
   light: (
     backgroundColor: #efe7e3,
-    logo: #282828,
     headerBG: #423d3b,
-    headerColor: #efe7e3,
-    fontColor: #282828,
+    fontColor: color(black1),
     lightColor: #423d3b,
-    lightFontColor: #ffffff,
-    borderColor: #282828,
-    footerBackground: #c7bebb,
-    themeSwitchButton: #ffffff,
-    themeSwitchLightItem: #ffffff,
-    themeSwitchDarkItem: #e4e4e4,
+    lightFontColor: color(light),
+    grayColor: color(light),
+    borderColor: color(black1),
+    footerBackground: color(gray1),
+    themeSwitchButton: color(light),
+    themeSwitchLightItem: color(light),
+    themeSwitchDarkItem: color(silver1),
     themeSwitchPosition: 0.4rem,
   ),
   dark: (
-    backgroundColor: #282828,
-    logo: #e4e4e4,
-    headerBG: #e4e4e4,
-    headerColor: #282828,
-    fontColor: #e4e4e4,
+    backgroundColor: color(black1),
+    headerBG: color(silver1),
+    fontColor: color(silver1),
     lightColor: #f0e7e4,
-    lightFontColor: #121111,
-    borderColor: #ffffff,
+    lightFontColor: color(black1),
+    grayColor: #f0e7e4,
+    borderColor: color(light),
     footerBackground: #f0e7e4,
-    themeSwitchLightItem: #e4e4e4,
-    themeSwitchDarkItem: #ffffff,
+    themeSwitchLightItem: color(silver1),
+    themeSwitchDarkItem: color(light),
     themeSwitchPosition: 50%,
   ),
 );
@@ -51,7 +49,7 @@ $themes: (
       @content;
 
       @if $transition == true {
-        transition: all 160ms linear;
+        transition: all 120ms linear;
       }
 
       $theme-map: null !global;

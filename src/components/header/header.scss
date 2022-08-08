@@ -4,7 +4,7 @@
 .header {
   @include themify {
     background-color: themed("headerBG");
-    color: themed("headerColor");
+    color: themed("backgroundColor");
   }
 
   box-sizing: border-box;
@@ -41,10 +41,12 @@
 
     @include breakpoint($desktop) {
       margin-bottom: 4rem;
+      max-width: 52rem;
     }
 
     @include breakpoint($mobile) {
       margin-bottom: 4rem;
+      max-width: 25rem;
     }
   }
 }

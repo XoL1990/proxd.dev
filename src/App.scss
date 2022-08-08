@@ -13,6 +13,7 @@
   @include themify(false) {
     background-color: themed("backgroundColor");
   }
+  transition: background-color 120ms linear;
 
   &__container {
     display: flex;

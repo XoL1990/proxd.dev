@@ -18,6 +18,7 @@ export enum TileImagePosition {
   inside,
   overflow,
   margin,
+  margintop,
   small,
 }
 

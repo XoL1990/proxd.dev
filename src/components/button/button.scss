@@ -1,6 +1,7 @@
 @use "~styles/breakpoint" as *;
 @use "~styles/colors" as *;
 @use "~styles/mixins" as *;
+@use "~styles/themes" as *;
 @use "~styles/typography" as *;
 
 .button {
@@ -31,17 +32,17 @@
   }
 
   &--white {
-    background-color: color(gray8);
+    background-color: color(silver8);
     color: color(black1);
 
     &:hover {
-      background-color: color(gray7);
+      background-color: color(silver7);
     }
   }
 
   &--black {
     background-color: color(black1);
-    color: color(gray8);
+    color: color(silver8);
 
     &:hover {
       background-color: color(black2);
@@ -50,7 +51,7 @@
 
   &--green {
     background-color: color(green1);
-    color: #ffffff;
+    color: color(light);
 
     &:hover {
       background-color: color(green2);
@@ -59,7 +60,7 @@
 
   &--purple {
     background-color: color(purple1);
-    color: #ffffff;
+    color: color(light);
 
     &:hover {
       background-color: color(purple2);
@@ -87,10 +88,12 @@
   }
 
   &--text-grey {
-    color: #c7bebb;
+    color: color(gray1);
   }
 
   &--text-gray {
-    color: #f0e7e4;
+    @include themify {
+      color: themed("grayColor");
+    }
   }
 }

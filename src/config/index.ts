@@ -87,7 +87,7 @@ export const projects = [
     description: "An Asset Tag 2 page for Kontakt.io",
     role: "Fullstack Developer",
     image: "/images/AssetTag2.png",
-    imagePosition: TileImagePosition.inside,
+    imagePosition: TileImagePosition.margintop,
     tags: [
       Technology.PHP,
       Technology.WordPress,
@@ -96,7 +96,7 @@ export const projects = [
       Technology.SCSS,
       Technology.CSS,
     ],
-    color: ProjectColor.whiteGreen,
+    color: ProjectColor.white,
     url: "https://kontakt.io/asset-tag-2-2",
   },
   {
@@ -106,7 +106,7 @@ export const projects = [
     description: "A Nano Tag page for Kontakt.io",
     role: "Fullstack Developer",
     image: "/images/NanoTag.png",
-    imagePosition: TileImagePosition.inside,
+    imagePosition: TileImagePosition.margintop,
     tags: [
       Technology.PHP,
       Technology.WordPress,
@@ -125,7 +125,7 @@ export const projects = [
     description: "A Anchor Beacon 2 page for Kontakt.io",
     role: "Fullstack Developer",
     image: "/images/AnchorBeacon2.png",
-    imagePosition: TileImagePosition.inside,
+    imagePosition: TileImagePosition.margintop,
     tags: [
       Technology.PHP,
       Technology.WordPress,
@@ -143,7 +143,7 @@ export const projects = [
     description: "A NFT project",
     role: "Fullstack Developer",
     image: "/images/NFT.png",
-    imagePosition: TileImagePosition.overflow,
+    imagePosition: TileImagePosition.inside,
     tags: [
       Technology.TypeScript,
       Technology.Angular,
@@ -332,7 +332,7 @@ export const projects = [
     image: "/images/GorrionGame.png",
     imagePosition: TileImagePosition.overflow,
     tags: [Technology.Unity, Technology.Firebase, Technology.CSharp, Technology.Git],
-    color: ProjectColor.silver,
+    color: ProjectColor.greyPurple,
     androidUrl: "https://play.google.com/store/apps/details?id=io.gorrion.roadtosuccess",
     iosUrl: "https://apps.apple.com/za/app/road-to-success/id1514592622",
   },
@@ -546,7 +546,7 @@ export const projects = [
       Technology.CSS,
       Technology.Git,
     ],
-    color: ProjectColor.whiteGreen,
+    color: ProjectColor.white,
   },
   {
     title: "Geoportal",

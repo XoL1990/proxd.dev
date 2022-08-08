@@ -1,5 +1,6 @@
 @use "~styles/breakpoint" as *;
 @use "~styles/colors" as *;
+@use "~styles/mixins" as *;
 @use "~styles/themes" as *;
 
 @keyframes tile-animation {
@@ -19,6 +20,11 @@
   animation-duration: 500ms;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
+  @include transition-medium(transform);
+
+  &:hover {
+    transform: scale(1.02);
+  }
 
   @include breakpoint($mobile) {
     padding: 2rem 1.6rem;
@@ -26,7 +32,7 @@
   }
 
   &--white {
-    background-color: #ffffff;
+    background-color: color(light);
   }
 
   &--green {
@@ -41,7 +47,7 @@
     background-color: color(purple1);
 
     *:not(h2) {
-      color: #c7bebb;
+      color: color(gray1);
     }
   }
 
@@ -50,15 +56,17 @@
   }
 
   &--grey {
-    background-color: #c7bebb;
+    background-color: color(gray1);
   }
 
   &--gray {
-    background-color: #f0e7e4;
+    @include themify {
+      background-color: themed("grayColor");
+    }
   }
 
   &--silver {
-    background-color: #e4e4e4;
+    background-color: color(silver1);
   }
 
   &--light {
@@ -92,10 +100,26 @@
 
     &--overflow {
       margin-top: -7rem;
+
+      @include breakpoint($tablet) {
+        margin-top: -5.5rem;
+      }
     }
 
     &--margin {
       margin: -4rem auto -8rem;
+
+      @include breakpoint($tablet) {
+        margin: -2rem auto -4rem;
+      }
+    }
+
+    &--margintop {
+      margin-top: -3rem;
+
+      @include breakpoint($tablet) {
+        margin-top: -2rem;
+      }
     }
 
     &--small {

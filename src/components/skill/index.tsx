@@ -15,8 +15,8 @@ const Skill = ({ className, name }: Props) => {
 
   const isClear = name === "Clear";
 
-  const technologyEnum = isClear ? -1 : Technology[name];
-  const isActive = useMemo(() => filters.includes(technologyEnum), [filters]);
+  const technology = isClear ? -1 : Technology[name];
+  const isActive = useMemo(() => filters.includes(technology), [filters]);
 
   const handleClick = () => {
     if (isClear) {
@@ -24,9 +24,9 @@ const Skill = ({ className, name }: Props) => {
       return;
     }
     if (isActive) {
-      setFilters(filters.filter((filter) => filter !== technologyEnum));
+      setFilters(filters.filter((filter) => filter !== technology));
     } else {
-      setFilters([...filters, technologyEnum]);
+      setFilters([...filters, technology]);
     }
   };
 

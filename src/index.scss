@@ -1,4 +1,3 @@
-@import "~styles/colors";
 @import "~styles/breakpoint";
 @import "~styles/mixins";
 @import "~styles/reset";
@@ -39,13 +38,13 @@ h2 {
   line-height: 5rem;
 
   @include breakpoint($desktop) {
-    font-size: 3rem;
+    font-size: 3.4rem;
     line-height: 4rem;
   }
 
   @include breakpoint($mobile) {
-    font-size: 2.2rem;
-    line-height: 2.4rem;
+    font-size: 3rem;
+    line-height: 3rem;
   }
 }
 
