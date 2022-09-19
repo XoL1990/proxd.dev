@@ -114,11 +114,6 @@ const Tiles = React.memo(() => {
           case ProjectColor.light:
             type = TileType.light;
             break;
-          case ProjectColor.lightPurple:
-            type = TileType.light;
-            buttonType = ButtonType.purple;
-            roleClass = " tiles__purple";
-            break;
           default:
             break;
         }

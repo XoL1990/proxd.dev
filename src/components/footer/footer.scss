@@ -56,6 +56,7 @@ $padding-desktop: 3.3rem;
     color: inherit;
     text-decoration: none;
     border-radius: 1rem;
+    margin: -1rem 0;
     padding: 1rem;
     text-align: center;
     cursor: pointer;
@@ -113,6 +114,7 @@ $padding-desktop: 3.3rem;
   &__name {
     font-size: 1.4rem;
     padding: 0 $padding;
+    text-align: right;
     @include themed-font;
 
     @include breakpoint($desktop) {
@@ -131,7 +133,7 @@ $padding-desktop: 3.3rem;
 
   &__year {
     position: absolute;
-    right: $padding;
+    left: $padding;
     bottom: 2.7rem;
 
     @include breakpoint($desktop) {
